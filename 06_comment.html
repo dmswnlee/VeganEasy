@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 상태 바의 색상을 설정하는 코드 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<!-- 모바일 웹을 웹앱 형태로 설정하는 코드 -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 바로가기 아이콘 설정하는 코드(아이폰,안드로이드 둘다적용) -->
+<link rel="apple-touch-icon-precomposed" href=".png" />
+<!-- 인트로 화면을 설정하는 코드 -->
+<link rel="apple-touch-startup-image" href=".png" />
+<title>댓글</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/comment.js"></script>
+</head>
+<body>
+<div class="comment">
+    <div>
+        <h2>댓글</h2>
+        <a href="04_recipe.html"><img src="images/arrow_b.png" alt="이전버튼"/></a>
+    </div>
+    <div class="comment_bg">
+        <dl>
+            <dt>초보채식이</dt>
+            <dd class="img_5"><img src="images/img_Profile_02.jpg" /></dd>
+            <dd class="txt_7">남아있는 시금치를 잘 활용할 수 있어요!</dd>
+        </dl>
+        <dl>
+            <dt>고양이</dt>
+            <dd class="img_5"><img src="images/img_Profile_03.png" /></dd>
+            <dd class="txt_7">시금치를 제일좋아하는데 너무 맛있어요.</dd>
+        </dl>
+        <dl>
+            <dt>야무지게먹어야지</dt>
+            <dd class="img_5"><img src="images/img_Profile_04.jpg" /></dd>
+            <dd class="txt_7">가볍게 먹을 수 있어 좋았습니다.</dd>
+        </dl>
+        <dl>
+            <dt>속삭이는비건</dt>
+            <dd class="img_5"><img src="images/img_Profile_05.jpg" /></dd>
+            <dd class="txt_7">북마크 해두고 자주 해먹으려구요! </dd>
+        </dl>
+        <div>
+            <label for="chating" class="blind">댓글입력</label>
+            <input type="text" id="chating" autofocus required placeholder="댓글내용을 입력해주세요" />
+            <a href="#">닉네임</a>
+            <a href="#"><img src="images/icon_Profile.png" /></a>
+        </div>
+        <a href="#">등록</a>
+    </div>
+</div>
+</body>
+</html>

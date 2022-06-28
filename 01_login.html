@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 상태 바의 색상을 설정하는 코드 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<!-- 모바일 웹을 웹앱 형태로 설정하는 코드 -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 바로가기 아이콘 설정하는 코드(아이폰,안드로이드 둘다적용) -->
+<link rel="apple-touch-icon-precomposed" href=".png" />
+<!-- 인트로 화면을 설정하는 코드 -->
+<link rel="apple-touch-startup-image" href=".png" />
+<title>로그인</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+    <!-- login -->
+    <div class="login">
+        <h2><img src="images/logo.png" alt="비건이지 로고" /></h2>
+        <form action="#" method="post" class="loginForm">
+        <fieldset>
+        <legend class="blind">로그인</legend>
+            <ol>
+            <li>
+                <label for="userID" class="blind">아이디</label>
+                <input type="text" id="userID" autofocus required placeholder="아이디를 입력해주세요" />
+            </li>
+            <li>
+                <label for="userpw" class="blind">비밀번호</label>
+                <input type="password" id="userpw" required placeholder="비밀번호를 입력해주세요" />
+            </li>
+            </ol>
+        </fieldset>
+        </form>
+        <p class="loginBtn"><a href="03_main.html">로그인</a></p>
+        <ul>
+            <li><a href="#">ID 찾기</a></li>
+            <li><a href="#">PW 찾기</a></li>
+            <li><a href="02_join.html">회원가입</a></li>
+        </ul>
+    </div>
+    <div class="easy">
+        <p>간편로그인</p>
+        <ul>
+            <li><a href="#"><img src="images/icon_line-brands.png" alt="line" /></a></li>
+            <li><a href="#"><img src="images/icon_facebook-square-brands.png" alt="facebook" /></a></li>
+            <li><a href="#"><img src="images/icon_google-brands.png" alt="google" /></a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 상태 바의 색상을 설정하는 코드 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<!-- 모바일 웹을 웹앱 형태로 설정하는 코드 -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 바로가기 아이콘 설정하는 코드(아이폰,안드로이드 둘다적용) -->
+<link rel="apple-touch-icon-precomposed" href=".png" />
+<!-- 인트로 화면을 설정하는 코드 -->
+<link rel="apple-touch-startup-image" href=".png" />
+<title>레시피,필터</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/recipe.js"></script>
+</head>
+<body>
+<div class="bg"></div>
+<!-- filter -->
+<div class="filterBtn"><a href="#"><img src="images/btn_filter.png" alt="필터 열기" /></a></div>
+<div class="filter">
+    <div class="filter_close"><a href="#"><img src="images/filter_close.png" alt="필터 닫기" /></a></div>
+    <div>
+        <h2>필터</h2>
+        <ul class="category">
+            <li><a href="#" class="on">한식</a></li>
+            <li><a href="#">양식</a></li>
+            <li><a href="#">일식</a></li>
+            <li><a href="#">중식</a></li>
+            <li><a href="#">디저트</a></li>
+        </ul>
+        <ul class="food">
+            <li class="on"><a href="#">#밥,죽</a></li>
+            <li><a href="#">#국</a></li>
+            <li><a href="#">#구이</a></li>
+            <li><a href="#">#찜</a></li>
+            <li><a href="#">#김치</a></li>
+            <li><a href="#">#조림</a></li>
+        </ul>
+    </div>
+    <div>
+        <h2>정렬</h2>
+        <ul class="range">
+            <li class="on"><a href="#">추천순</a></li>
+            <li><a href="#">난이도순</a></li>
+        </ul>
+    </div>
+    <p><a href="#">초기화</a></p>
+    <p><a href="#">적용하기</a></p>
+</div>
+<div class="recipe">
+    <div>
+    <h2>레시피</h2>
+    <a href="03_main.html"><img src="images/arrow_w.png" alt="이전버튼"/></a>
+    </div>
+    <ul class="menu">
+        <li><a href="#" class="on">한식</a></li>
+        <li><a href="#">양식</a></li>
+        <li><a href="#">일식</a></li>
+        <li><a href="#">중식</a></li>
+        <li><a href="#">디저트</a></li>
+        <!-- <li><a href="#"><img src="images/btn_filter.png" alt="필터" /></a></li> -->
+    </ul>
+    <div class="recipe_bg">
+        <div>
+            <ul>
+                <li><a href="05_recipe_detail.html"><img src="images/img_recipe_01.jpg" alt="시금치 커리" /></a></li>
+                <li>시금치 커리</li>
+                <li>난이도 ★ ★ ☆ ☆ ☆</li>
+                <li>제철 겨울 시금치를 활용하여 만든 비건 커리!</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#"><img src="images/img_recipe_02.jpg" alt="김표고장아찌" /></a></li>
+                <li>김표고장아찌</li>
+                <li>난이도 ★ ★ ★ ☆ ☆</li>
+                <li>밑반찬으로 먹기좋은 색다른 장아찌를 소개합니다.</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#"><img src="images/img_recipe_03.jpg" alt="후무스샐러드" /></a></li>
+                <li>후무스샐러드</li>
+                <li>난이도 ★ ★ ★ ☆ ☆</li>
+                <li>한 끼 식사로도 손색이 없는 든든한 영양 만점 샐러드를 소개합니다.</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#"><img src="images/img_recipe_04.jpg" alt="김 두부 덮밥" /></a></li>
+                <li>김 두부 덮밥</li>
+                <li>난이도 ★ ★ ☆ ☆ ☆</li>
+                <li>냉장고 속 두부로 만드는 맛있는 한 끼 요리를 알려드려요.</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#"><img src="images/img_recipe_05.jpg" alt="가지 갈비" /></a></li>
+                <li>가지 갈비</li>
+                <li>난이도 ★ ★ ☆ ☆ ☆</li>
+                <li>갈비보다 더 맛있는 갈비가 나타났어요!</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#"><img src="images/img_recipe_06.jpg" alt="유부 잔치국수" /></a></li>
+                <li>유부 잔치국수</li>
+                <li>난이도 ★ ★ ☆ ☆ ☆</li>
+                <li>담백하고 깔끔한 채수로 만든 잔치국수 한그릇!</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#"><img src="images/img_recipe_07.jpg" alt="오이 금귤 피클" /></a></li>
+                <li>오이 금귤 피클</li>
+                <li>난이도 ★ ★ ★ ☆ ☆</li>
+                <li>아삭한 식감의 오이와 금귤의 달콤하면서도 쌉싸름한 맛이 어우러진 피클을 소개합니다.</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#"><img src="images/img_recipe_08.jpg" alt="버섯 리조또" /></a></li>
+                <li>버섯 리조또</li>
+                <li>난이도 ★ ★ ★ ☆ ☆</li>
+                <li>표고버섯과 현미를 사용해 건강하고 맛있는 버섯 리조또를 소개합니다.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="bar">
+        <a href="03_main.html" class="btn_main"><img src="images/icon_home.png" alt="Home"></a>
+        <a href="04_recipe.html" class="btn_recipe"><img src="images/icon_recipe_on.png" alt="recipe"></a>
+        <a href="07_restaurant.html" class="btn_restaurant"><img src="images/icon_restaurant.png" alt="restaurant"></a>
+        <a href="10_cafe.html" class="btn_cafe"><img src="images/icon_cafe.png" alt="cafe"></a>
+        <a href="12_mypage.html" class="btn_mypage"><img src="images/icon_mypage.png" alt="mypage"></a>
+    </div>
+</div>
+</body>
+</html>l

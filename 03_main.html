@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 상태 바의 색상을 설정하는 코드 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<!-- 모바일 웹을 웹앱 형태로 설정하는 코드 -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 바로가기 아이콘 설정하는 코드(아이폰,안드로이드 둘다적용) -->
+<link rel="apple-touch-icon-precomposed" href=".png" />
+<!-- 인트로 화면을 설정하는 코드 -->
+<link rel="apple-touch-startup-image" href=".png" />
+<title>메인페이지</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="bg"></div>
+<div class="mobBtn"><a href="#"><img src="images/btn_menu.png" alt="메뉴 열기" /></a></div>
+<!-- 모바일메뉴 -->
+<div class="mob">
+    <div class="mobBtn_close"><a href="#"><img src="images/filter_close.png" alt="메뉴 닫기" /></a></div>
+    <div>
+        <p><img src="images/img_Profile_01.jpg" alt="프로필사진" /></p>
+        <p>시금치가 좋아</p>
+        <ul>
+            <li><a href="#">필터</a></li>
+            <li><a href="#">내가 쓴 글</a></li>
+            <li><a href="#">커뮤니티</a></li>
+            <li><a href="#">설정</a></li>
+            <li><a href="01_login.html">로그아웃</a></li>
+        </ul>
+        <p><img src="images/menu_logo.png" alt="비건이지" /></p>
+    </div>
+    <p><img src="images/menu_logo.png" alt="비건이지" /></p>
+</div>
+<div class="main">
+    <h1>비건이지</h1>
+    <div class="btn_main">
+        <ul>
+            <li>
+                <a href="04_recipe.html"><img src="images/btn_recipe.png" alt="레시피">레시피</a>
+            </li>
+            <li>
+                <a href="07_restaurant.html"><img src="images/btn_restaurant.png" alt="식당">식당</a>
+            </li>
+            <li>
+                <a href="10_cafe.html"><img src="images/btn_cafe.png" alt="카페•베이커리">카페&middot;<br />베이커리</a>
+            </li>
+            <li>
+                <a href="#"><img src="images/btn_vegan.png" alt="월간비건">월간 비건</a>
+            </li>
+        </ul>
+    </div>
+    <div class="today">
+        <div>
+            <h2># 오늘의 추천레시피</h2>
+            <dl>
+                <dt>시금치 커리</dt>
+                <dd class="img"><img src="images/img_recipe_01.jpg" alt="시금치커리" /></dd>
+                <dd class="txt">제철 겨울 시금치를 활용하여 만든 비건커리! 맛 뿐만 아니라 영양도 가득합니다.</dd>
+            </dl>
+            <a href="04_recipe.html" title="레시피 보기">자세히보기</a>
+        </div>
+        <div>
+            <h2># 오늘의 추천식당</h2>
+            <dl>
+                <dt>다이너재키</dt>
+                <dd class="img"><img src="images/img_restaurant_02.jpg" alt="다이너재키 연어샐러드" /></dd>
+                <dd class="txt">비건식부터 페스코베지테리안식까지 누구나 즐길 수 있는 채식전문 간이식당입니다.</dd>
+            </dl>
+            <a href="07_restaurant.html" title="상세정보 보기">자세히보기</a>
+        </div>
+        <div>
+            <h2># 오늘의 추천베이커리</h2>
+            <dl>
+                <dt>지구제과</dt>
+                <dd class="img"><img src="images/img_cafe_02.jpg" alt="지구제과" /></dd>
+                <dd class="txt">제주도 산 유기농 녹차가루, 국내산 현미가루, 강원도산 팥으로 만듭니다.</dd>
+            </dl>
+            <a href="10_cafe.html" title="상세정보 보기">자세히보기</a>
+        </div>
+    </div>
+    <div class="bar">
+        <a href="03_main.html" class="btn_main"><img src="images/icon_home_on.png" alt="Home"></a>
+        <a href="04_recipe.html" class="btn_recipe"><img src="images/icon_recipe.png" alt="recipe"></a>
+        <a href="07_restaurant.html" class="btn_restaurant"><img src="images/icon_restaurant.png" alt="restaurant"></a>
+        <a href="10_cafe.html" class="btn_cafe"><img src="images/icon_cafe.png" alt="cafe"></a>
+        <a href="12_mypage.html" class="btn_mypage"><img src="images/icon_mypage.png" alt="mypage"></a>
+    </div>
+</body>
+</html>

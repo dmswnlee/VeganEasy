@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 상태 바의 색상을 설정하는 코드 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<!-- 모바일 웹을 웹앱 형태로 설정하는 코드 -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 바로가기 아이콘 설정하는 코드(아이폰,안드로이드 둘다적용) -->
+<link rel="apple-touch-icon-precomposed" href=".png" />
+<!-- 인트로 화면을 설정하는 코드 -->
+<link rel="apple-touch-startup-image" href=".png" />
+<title>레시피 상세페이지</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="shop_detail">
+    <a href="10_cafe.html"><img src="images/arrow_w.png" /></a>
+    <span><img src="images/img_cafe_01.jpg" alt="지구제과" /></span>
+    <ul>
+        <li>지구제과</li>
+        <li>카페,베이커리</li>
+        <li><span>별점</span> ★ ★ ★ ★ ☆</li>
+    </ul>
+    <ul>
+        <li>메뉴</li>
+        <li>바나나 캐러멜 피칸<span>3,500원</span></li>
+        <li>오리엔탈 양갱케이크<span>4,500원</span></li>
+        <li>크럼블 쑥 큐브파운드<span>4,500원</span></li>
+        <li>클래식 스콘<span>3,000원</span></li>
+        <li>큐브파운드케이크<span>4,500원</span></li>
+        <li>레몬케이크<span>3,000원</span></li>
+        <li>쇼콜라시나몬머핀<span>4,000원</span></li>
+        <li>비건 글루텐프리 티라미수<span>7,500원</span></li>
+    </ul>
+    <ul>
+        <li>기본정보</li>
+        <li><span>주소</span>&nbsp;서울 마포구 성미산로29길 30-3 1층 </li>
+        <li><span>전화번호</span>&nbsp;0507-1360-2726</li>
+        <li><span>영업시간</span>&nbsp;12:00 ~ 20:00 (매주 월요일은 휴무입니다)</li>
+        <li><span>인스타그램</span>&nbsp;<a href="#">http://instagram.com/jigu_bakery</a></li>
+        <li><span>기타정보</span>&nbsp;포장, 반려동물 동반, 제로페이</span></li>
+    </ul>
+    <section>
+
+        <div id="map"></div>
+        <script>
+            let map;
+
+            function initMap() {
+                var addr = { lat: 37.5655,  lng: 126.9222 };
+
+                map = new google.maps.Map(document.getElementById("map"), {
+                    center: addr,
+                    zoom: 15,
+                });
+
+                var marker = new google.maps.Marker({
+                    position : addr,
+                    map: map,
+                    title:"지구제과"
+                });
+
+                var infowindow = new google.maps.InfoWindow({
+                    content:"지구제과"
+                });
+                infowindow.open(map,marker);
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYgXZdtHEetaYXNom1hULEiwfn5EPQKE8&callback=initMap&v=weekly" async></script>
+    </section>
+    <div>
+        <ul>
+            <li><a href="#">북마크</a></li>
+            <li><a href="09_review.html">리뷰</a></li>
+            <li><a href="#">공유</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

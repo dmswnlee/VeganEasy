@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 상태 바의 색상을 설정하는 코드 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<!-- 모바일 웹을 웹앱 형태로 설정하는 코드 -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 바로가기 아이콘 설정하는 코드(아이폰,안드로이드 둘다적용) -->
+<link rel="apple-touch-icon-precomposed" href=".png" />
+<!-- 인트로 화면을 설정하는 코드 -->
+<link rel="apple-touch-startup-image" href=".png" />
+<title>공지사항</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="notice">
+    <div>
+        <h2>공지사항</h2>
+        <a href="12_mypage.html"><img src="images/arrow_b.png" alt="이전버튼"/></a>
+    </div>
+    <table>
+        <caption class="blind">공지사항</caption>
+        <thead>
+            <tr>
+                <th scope="col">NO.</th>
+                <th scope="col">제목</th>
+                <th scope="col">작성일자</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="col">1</td>
+                <td scope="col"><a href="#">2월3일 업데이트 예정일 입니다.</a></td>
+                <td scope="col">2022.02.01</td>
+            </tr>
+            <tr>
+                <td scope="col">2</td>
+                <td scope="col"><a href="#">새해 기념 이벤트 진행합니다.</a></td>
+                <td scope="col">2021.12.29</td>
+            </tr>
+            <tr>
+                <td scope="col">3</td>
+                <td scope="col"><a href="#">크리스마스 기념 이벤트 진행합니다.</a></td>
+                <td scope="col">2021.12.20</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+        <a href="#"><img src="images/btn_prev.png" alt="이전 목록으로 이동" title="이전 목록으로 이동"></a>
+        <a href="#"><img src="images/btn_next.png" alt="다음 목록으로 이동" title="다음 목록으로 이동"></a>
+    </p>    
+</div>
+</body>
+</html>
